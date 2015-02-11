@@ -15,10 +15,20 @@
 </p>
 
 <p>
-  <strong>Price in cents:</strong>
-  <%= @product.price_in_cents %>
+  <strong>Price</strong>
+  <%= @product.price_conversion %>
 </p>
+<h3>Reviews</h3>
+<% @product.reviews.each do |review| %>
+<p>
+<%= review.comment %>
+<br>
+Added on: <%= review.created_at %>
+</p>
+<% end %>
 
+<h3>Add Review</h3>
+<%= render 'reviews/form' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

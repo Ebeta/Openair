@@ -51,6 +51,7 @@ class ProductsController < ApplicationController
     end
   end
 
+
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
@@ -61,6 +62,10 @@ class ProductsController < ApplicationController
     end
   end
 
+   def show
+    @review = Review.new
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -69,6 +74,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :price_in_cents, :photo)
+      params.require(:product).permit(:name, :description, :price_in_cents, :photo, :reviews)
     end
 end
