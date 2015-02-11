@@ -16,7 +16,7 @@
 
 <p>
   <strong>Price</strong>
-  <%= @product.price_conversion %>
+  <%= "$" + @product.price_conversion %>
 </p>
 <h3>Reviews</h3>
 <% @product.reviews.each do |review| %>
