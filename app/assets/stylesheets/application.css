@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+div.createp{
+	font-family: Helvetica;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 150px;
+}
+
+div.createp h2 {
+	font-size: 19px;
+	padding-top: 5%;
+	margin: 0 43%;
+}
+
+body {
+	background-color: #E6FAEF;
+}
+
+table.table-head {
+	margin: 0 43%;
+	padding-top: 5%;
+}
+
+div.products {
+	border: 1px solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 500px;
+}
+
+div.productdescrip {
+	margin: 0 30%;
+}
