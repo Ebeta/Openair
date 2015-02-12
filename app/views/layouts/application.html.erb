@@ -23,11 +23,16 @@
 
 <ul class="menubar">
 
+<ul class="hmenu">
+  <%= render 'devise/menu/registration_items' %>
+  <%= render 'devise/menu/login_items' %>
+</ul>
+
 <li><a href="#">Help</a></li>
 
 <li><a href="#"> <%= image_tag ("Shopping-Cart-Icon-5.jpg"), id: "cart_icon" %> Shopping Cart</a></li>
 
-<li><a href="#">SIGN IN / REGISTER</a></li>
+<!-- <li><a href="#">SIGN IN / REGISTER</a></li> -->
 </ul>
 
 </div>
