@@ -10,7 +10,6 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @review = Review.new
   end
 
   # GET /products/new
@@ -62,7 +61,6 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
    def show
     @review = Review.new
   end
