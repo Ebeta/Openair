@@ -41,5 +41,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'mini_magick', '3.8.0'
+  gem 'devise'
+  gem 'redis', '~> 3.0.1'
+  gem 'hiredis', '~> 0.4.5'
 end
 
