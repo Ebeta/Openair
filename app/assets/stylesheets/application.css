@@ -138,6 +138,18 @@ div.field {
 	margin: 10px;
 }
 
+div.new_product_page {
+    -webkit-animation: myfirst 4s; 
+    animation: myfirst 4s;
+}
+
+
+ @-webkit-keyframes myfirst {
+    from {background: white;}
+    to {background: #E6FAEF;}
+}
+
+
 div.actions{
 	padding-top: 5px;
 }
