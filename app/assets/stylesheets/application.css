@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+
+.logo_header {
+
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	background-color: white;
+	padding-bottom: 100px;
+}
+
+
+#Image_tag_logo {
+padding-top: 15px;
+padding-left: 15px;
+float: left;
+
+}
+
+
+ul li {
+	display: inline;
+	padding: 10px;
+	text-align: right;
+	float: right;
+}
+
+#cart_icon {
+
+	width: 20px;
+	height: 20px; 
+}
+
+
