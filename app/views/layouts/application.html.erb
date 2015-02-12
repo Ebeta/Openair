@@ -14,21 +14,21 @@
 
 <header>
 
+
 <div class="logo_header"> 
 
-
-
-<%= image_tag ("Rainforest Logo-01.png"), id: "Image_tag_logo" %>
+<%= link_to (image_tag "Rainforest Logo-01.png", id: "Image_tag_logo"), products_path %>
 
 
 <ul class="menubar">
 
-<li><a href="#">Help</a></li>
-<li><a href="#"> <%= image_tag ("Shopping-Cart-Icon-5.jpg"), id: "cart_icon" %> Shopping Cart</a></li>
+<li><%=image_tag "help.png", id: "help_icon"%> <%=link_to "Help", products_path%></li>
+<li><%=image_tag "cart.png", id: "cart_icon"%> <%=link_to "Shopping Cart", products_path%></li>
+<li><%=image_tag "login.png", id: "login"%> <%=link_to "SIGN IN / REGISTER", products_path%></li>
 
-<li><a href="#">SIGN IN / REGISTER</a></li>
 </ul>
 
+<%= render 'search', id:"search" %>
 </div>
 
 <br>
