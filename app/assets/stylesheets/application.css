@@ -67,13 +67,29 @@ float: left;
 
 }
 
+ul {
 
-ul li {
+	margin-right: 20px;
+}
+
+
+ul.menubar li {
 	display: inline;
 	padding: 10px;
 	text-align: right;
 	float: right;
 }
+
+ul.menubar li:first-child {
+	margin-top: 12px;
+
+}
+
+ul.menubar li:last-child {
+	margin-top: 10px;
+
+}
+
 
 #cart_icon {
 
@@ -81,5 +97,11 @@ ul li {
 	height: 20px; 
 }
 
+ul.footerbar li {
+	display: inline;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: white;
+}
 
 
