@@ -18,10 +18,10 @@
 
 <%= image_tag ("Rainforest Logo-01.png"), id: "Image_tag_logo" %>
 
-<ul>
-<li>Login / Register</li>
-<li>Help</li>
-<li> <%= image_tag ("Shopping-Cart-Icon-5.jpg"), id: "cart_icon" %> Shopping Cart</li>
+<ul class="menubar">
+<li><a href="#">Help</a></li>
+<li><a href="#"> <%= image_tag ("Shopping-Cart-Icon-5.jpg"), id: "cart_icon" %> Shopping Cart</a></li>
+<li><a href="#">Login / Register</a></li>
 </ul>
 </div>
 <br>
@@ -32,4 +32,16 @@
 <%= yield %>
 
 </body>
+
+<footer>
+	<ul class="footerbar">
+<li><a href="#">About Us</a></li>
+<li><a href="#">FAQs</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+
+
+	</footer>
 </html>
