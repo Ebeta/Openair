@@ -17,7 +17,7 @@ div.createp{
 	font-family: Helvetica;
 	font-size: 15px;
 	text-align: center;
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 div.createp h2 {
@@ -27,7 +27,7 @@ div.createp h2 {
 }
 
 body {
-	background-color: #E6FAEF;
+	background-color: white;
 }
 
 table.table-head {
@@ -40,8 +40,46 @@ div.products {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 500px;
+	background-color: #E6FAEF;
 }
 
 div.productdescrip {
 	margin: 0 30%;
 }
+
+
+.logo_header {
+
+	font-family: Helvetica,sans-serif;
+	font-size: 12px;
+	background-color: #E6FAEF;
+	padding-bottom: 85px;
+	box-shadow: 0px 0px 8px 0px #010101;
+	width: 100%;
+	height: 55px;
+}
+
+
+#Image_tag_logo {
+padding-top: 15px;
+padding-left: 15px;
+float: left;
+
+}
+
+
+ul li {
+	display: inline;
+	padding: 10px;
+	text-align: right;
+	float: right;
+}
+
+#cart_icon {
+
+	width: 20px;
+	height: 20px; 
+}
+
+
+
