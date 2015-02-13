@@ -1,32 +1,32 @@
 <p id="notice"><%= notice %></p>
-<body>
+
 <div class="createp">
   <h1><%= link_to 'Let\'s Sell Something!', new_product_path %></h1>
 
-<h4>Just Want to Browse? Check Out Our Products!</h4>
+  <h4>Just Want to Browse? Check Out Our Products!</h4>
 </div>
-<table class="table-head">
- 
 
-    <div class="productdescrip">
+
+<div class="products">
+
     <% @products.each do |product| %>
-      <div class="product">
-      <%= image_tag product.photo %> 
-       <p><h4> <%= product.name %></h4></p>
-      <!-- <p> <%= product.description %></p> -->
-       <p> <%=  "$" + product.price_conversion %></p>
-        <p><h6><%= link_to 'Show', product %>
-       <%= link_to 'Edit', edit_product_path(product) %>
-       <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></h6> <br>
-      </div>
+ <div class="productdescrip">
+    <%= image_tag product.photo %> 
+    <p><h4> <%= product.name %></h4></p>
+    <!-- <p> <%= product.description %></p> -->
+    <p> <%=  "$" + product.price_conversion %></p>
+    <p><h6><%= link_to 'Show | ', product %>
+      <%= link_to 'Edit | ', edit_product_path(product) %>
+      <%= link_to 'Add to Cart | ', product %>
+      <%= link_to 'Delete ', product, method: :delete, data: { confirm: 'Are you sure?' } %></h6> <br>
+    </div>
 
     <% end %>
-  
+    <div class="clear-me"></div>
   </div>
-  
-  </tbody>
-</table>
-</body>
-<br>
+
+
+
+
 
 

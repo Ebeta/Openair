@@ -12,16 +12,12 @@
   <%= csrf_meta_tags %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
-
+<body>
 <header>
-
 
 <div class="logo_header"> 
 
-
 <%= link_to (image_tag "Rainforest Logo-01.png", id: "Image_tag_logo"), products_path %>
-
-
  
 <ul class="menubar">
 <li><%=image_tag "help.png", id: "help_icon"%> <%=link_to "Help", products_path%></li>
@@ -38,7 +34,6 @@
 <br>
 
 </header>
-<body>
 
 <div class="wutwut">
 <%= yield %>
