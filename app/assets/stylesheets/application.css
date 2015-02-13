@@ -130,6 +130,10 @@ text-decoration: none
 	margin-top: 5%;
 	}
 
+.show_product img{
+	width: 100%;
+}
+
 .show_product {
 	
 	text-align: center;
