@@ -17,12 +17,20 @@ div.createp {
 	font-family: Helvetica;
 	font-size: 15px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 10px;
+	text-decoration: none;
 }
 
-div.createp h1{
+div.createp h1 {
 	color: #034624;
+	font-weight: bold;
 }
+
+div.createp h4 {
+	font-weight: bold;
+	color: black;
+}
+
 
 .logo_header {
 
@@ -35,14 +43,6 @@ div.createp h1{
 	height: 90px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-
-
-div.createp h2 {
-	font-size: 25px;
-	padding-top: 5%;
-	margin: 10px 41%;
 }
 
 body {
@@ -90,14 +90,12 @@ div.productdescrip {
 	width: 400px;
     padding: 25px;
     
-   /* margin: 25px;*/
+
 }
 
 .new_product_page h1 {
 	font-weight: bold;
 	color: #034624;
-
-
 }
 
 
@@ -109,29 +107,32 @@ float: left;
 }
 
 ul {
-
-	margin-right: 20px;
 	padding-top: 20px;
+	margin-right: 15px;
 }
 
 #search {
 	margin-top: 15px;
-	
 	margin-left: 70px;
 }
 
-ul.menubar li {
+.menubar li {
 	display: inline;
 	font-weight: bold;
 	color: black;
-	padding: 10px;
-	text-align: right;
+	margin-top: 15px;
 	float: right;
 	text-decoration: none;
+	padding-right: 10px;
 
 }
 
-ul.menubar li a:hover {
+.menubar li:nth-child(2) {
+	padding-right: 30px;
+}
+
+
+.menubar li a:hover {
 	padding-top: 3px;
 	color: #034624;
 	text-decoration: none;
@@ -171,7 +172,7 @@ ul.footerbar li {
 
 }
 
-ul.footerbar li a:hover{
+.footerbar li a:hover{
 	color: #034624;
 	text-decoration: none;
 }
