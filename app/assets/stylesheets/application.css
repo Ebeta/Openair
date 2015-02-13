@@ -37,9 +37,7 @@
 .createp, .show_product h4, h5 {
 	font-weight: bold;
 	color: black;
-
 }
-
 
 .logo_header {
 	font-family: Helvetica,sans-serif;
@@ -87,9 +85,14 @@ div.productdescrip {
 	box-shadow: 0px 0px 8px 0px grey;
 	width: 350px;
     padding: 25px;
+    margin-bottom:100px;
 }
 
-.new_product_page, .show_product, .signup, .logout, .log_in, .edit_signup {
+.productdescrip h4 {
+	font-weight: bold;
+}
+
+.new_product_page, .signup, .logout, .log_in, .edit_signup {
 	font-family: Helvetica, sans-serif;
 	margin-top: 5%;
 	margin-right: auto;
@@ -115,6 +118,22 @@ div.productdescrip {
 	margin-bottom: 10%;
 	margin-top: 5%;
 	}
+
+.show_product {
+	
+	text-align: center;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #E6FAEF;
+	padding-top: 25px; 
+	padding-bottom: 25px;
+	border-radius: 5px;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	}
+
+}
 
 .new_product_page h1 {
 	font-weight: bold;
@@ -186,7 +205,6 @@ div.field {
 	margin: 10px;
 }
 
-
 ul.footerbar li {
 	display: inline;
 	font-weight: bold;
@@ -194,8 +212,6 @@ ul.footerbar li {
 	padding-right: 20px;
 	text-decoration: none;
 	padding-top: 20px;
-
-
 }
 
 ul.footerbar {
@@ -226,13 +242,13 @@ footer {
 
 }
 
-div#picture {
-	padding-top: 10px;
+#picture {
+	padding-top: 5px;
 	padding-bottom: 5px;
-	max-width: 350px;
+	max-width: 400px;
 }
 
-div#newstuff {
+#newstuff {
 	margin: 10px;
 }
 p3{

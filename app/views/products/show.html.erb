@@ -2,16 +2,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Product Name:</strong><br>
+	<%= image_tag @product.photo %>
+</p>
+
+<p>
+ <!--  <strong>Product Name:</strong><br> -->
   <h1><%= @product.name %></h1>
 </p>
  <%if signed_in?%>
   <%= link_to "Remove", remove_from_cart_path(@product), method: :put, class:"btn" %>
   <%= link_to "Add to cart", add_to_cart_path(@product), method: :put, class:"btn" %>
  <%end%>
-<p>
-	<%= image_tag @product.photo %>
-</p>
+
 <p>
   <strong>Description:</strong><br>
   <%= @product.description %>
