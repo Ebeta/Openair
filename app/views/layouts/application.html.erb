@@ -23,22 +23,18 @@
 
 <ul class="menubar">
 
-<ul class="hmenu">
-  <%= render 'devise/menu/registration_items' %>
-  <%= render 'devise/menu/login_items' %>
-</ul>
-
-
 <li><%=image_tag "help.png", id: "help_icon"%> <%=link_to "Help", products_path%></li>
 <li><%=image_tag "cart.png", id: "cart_icon"%> <%=link_to "Shopping Cart", products_path%></li>
-
-
-
-<!-- <li><a href="#">SIGN IN / REGISTER</a></li> -->
+<li><%= render 'devise/menu/registration_items' %></li>
+<li><%= render 'devise/menu/login_items' %></li>
 
 </ul>
+   <div class="search"><%= render 'products/search' %></div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82580a8bf45a80297d33e3840f695f17b0ff77df
 </div>
 
 <br>
