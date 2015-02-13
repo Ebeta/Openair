@@ -70,7 +70,7 @@ div.products {
 	border: 1px solid;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 500px;
+	width: 400px;
 	background-color: #E6FAEF;
 }
 
@@ -149,12 +149,6 @@ ul.menubar {
 	margin-right: 15px;
 }
 
-#search {
-margin-left: 250px;
-margin-top: 11px;
-
-}
-
 .menubar li {
 	display: inline;
 	font-weight: bold;
@@ -168,6 +162,10 @@ margin-top: 11px;
 
 .menubar li:nth-child(2) {
 	padding-right: 30px;
+}
+
+.menubar li:last-child {
+	margin-right: 20px;
 }
 
 .menubar li a {
@@ -231,6 +229,7 @@ footer {
 div#picture {
 	padding-top: 10px;
 	padding-bottom: 5px;
+	max-width: 350px;
 }
 
 div#newstuff {
