@@ -9,12 +9,9 @@
   <%= link_to "Remove", remove_from_cart_path(@product), method: :put, class:"btn" %>
   <%= link_to "Add to cart", add_to_cart_path(@product), method: :put, class:"btn" %>
  <%end%>
-
-
 <p>
 	<%= image_tag @product.photo %>
 </p>
-
 <p>
   <strong>Description:</strong><br>
   <%= @product.description %>
@@ -32,12 +29,15 @@
 Added on: <%= review.created_at %>
 </p>
 <% end %>
+<p3>
+<h3>Add Review</h3>
 
 <h5>Add Review</h5>
-<%= render 'reviews/form' %>
 
+<%= render 'reviews/form' %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+</p3>
 
 </div>
 
