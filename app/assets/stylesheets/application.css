@@ -104,9 +104,9 @@ ul {
 }
 
 #search {
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 50px;
+	margin-top: 15px;
+	
+	margin-left: 70px;
 }
 
 ul.menubar li {
