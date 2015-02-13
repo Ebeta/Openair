@@ -20,6 +20,10 @@ div.createp {
 	padding-top: 50px;
 }
 
+div.createp h1{
+	color: #034624;
+}
+
 .logo_header {
 
 	font-family: Helvetica,sans-serif;
@@ -42,7 +46,7 @@ div.createp h2 {
 }
 
 body {
-	background-color: white;
+	background-image: url("jungle_copy.jpg");
 }
 
 table.table-head {
