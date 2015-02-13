@@ -50,5 +50,6 @@ group :development, :test do
   gem 'devise'
   gem 'redis', '~> 3.0.1'
   gem 'hiredis', '~> 0.4.5'
+  gem 'rails_12factor', group: :production
 end
 
