@@ -4,7 +4,13 @@
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
+ <%if signed_in?%>
+  <%= link_to "remove", remove_from_cart_path(@product), method: :put, class:"btn" %>
+  <%= link_to "Add to cart", add_to_cart_path(@product), method: :put, class:"btn" %>
+ <%end%>
 
+
+<p>
 	<%= image_tag @product.photo %>
 </p>
 
@@ -32,10 +38,6 @@ Added on: <%= review.created_at %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
-<%if signed_in?%>
-  <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@movie), removeUrl: remove_from_cart_path(@movie)} do%>
-    <i class="fi-shopping-cart"></i>
-    <span><%=@cart_action%></span> Cart
-  <%end%>
-<%end%>
+
+
 

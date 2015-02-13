@@ -99,6 +99,11 @@ ul {
 	padding-top: 20px;
 }
 
+#search {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 50px;
+}
 
 ul.menubar li {
 	display: inline;
@@ -108,19 +113,7 @@ ul.menubar li {
 	text-align: right;
 	float: right;
 	text-decoration: none;
-}
 
-ul.menubar li:first-child {
-	margin-top: 10px;
-}
-
-ul.menubar li:nth-child(2) {
-	margin-top: 8px;
-}
-
-
-ul.menubar li:last-child {
-	margin-top: 10px;
 }
 
 ul.menubar li a:hover {
