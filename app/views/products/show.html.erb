@@ -1,11 +1,12 @@
+<div class="show_product">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
+  <strong>Product Name:</strong><br>
+  <h1><%= @product.name %></h1>
 </p>
  <%if signed_in?%>
-  <%= link_to "remove", remove_from_cart_path(@product), method: :put, class:"btn" %>
+  <%= link_to "Remove", remove_from_cart_path(@product), method: :put, class:"btn" %>
   <%= link_to "Add to cart", add_to_cart_path(@product), method: :put, class:"btn" %>
  <%end%>
 
@@ -15,15 +16,15 @@
 </p>
 
 <p>
-  <strong>description:</strong>
+  <strong>Description:</strong><br>
   <%= @product.description %>
 </p>
 
 <p>
-  <strong>Price</strong>
+  <strong>Price</strong><br>
   <%= "$" + @product.price_conversion %>
 </p>
-<h3>Reviews</h3>
+<h5>Reviews</h5>
 <% @product.reviews.each do |review| %>
 <p>
 <%= review.comment %>
@@ -32,12 +33,12 @@ Added on: <%= review.created_at %>
 </p>
 <% end %>
 
-<h3>Add Review</h3>
+<h5>Add Review</h5>
 <%= render 'reviews/form' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
-
+</div>
 
 

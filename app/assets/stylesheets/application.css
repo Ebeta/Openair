@@ -13,22 +13,24 @@
  *= require_tree .
  *= require_self
  */
-div.createp {
+.createp {
 	font-family: Helvetica;
 	font-size: 15px;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 7%;
 	text-decoration: none;
 }
 
-div.createp h1 {
-	color: #034624;
+.createp h1 {
+	color: black;
 	font-weight: bold;
+	text-decoration: none;
 }
 
-div.createp h4 {
+.createp, .show_product h4, h5 {
 	font-weight: bold;
 	color: black;
+
 }
 
 
@@ -43,10 +45,12 @@ div.createp h4 {
 	height: 90px;
 	padding-left: 20px;
 	padding-right: 20px;
+
 }
 
 body {
 	background-image: url("jungle_copy.jpg");
+	height: 100%;
 }
 
 table.table-head {
@@ -77,10 +81,9 @@ div.productdescrip {
     padding: 25px;
 }
 
-.new_product_page {
+.new_product_page, .show_product, .edit_reviews {
 	font-family: Helvetica, sans-serif;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-top: 5%;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
@@ -88,9 +91,8 @@ div.productdescrip {
 	background-color: #E6FAEF;
 	box-shadow: 0px 0px 8px 0px grey;
 	width: 400px;
-    padding: 25px;
-    
-
+    padding: 25px; 
+    margin-bottom: 10%;
 }
 
 .new_product_page h1 {
@@ -98,6 +100,21 @@ div.productdescrip {
 	color: #034624;
 }
 
+div.new_product_page {
+    -webkit-animation: myfirst 4s; 
+    animation: myfirst 4s;
+}
+
+
+ @-webkit-keyframes myfirst {
+    from {background: white;}
+    to {background: #E6FAEF;}
+}
+
+
+div.actions{
+	padding-top: 5px;
+}
 
 #Image_tag_logo {
 padding-top: 15px;
@@ -112,7 +129,7 @@ ul {
 }
 
 #search {
-	margin-top: 15px;
+	margin-top: auto;
 	margin-left: 70px;
 }
 
@@ -147,21 +164,6 @@ div.field {
 	margin: 10px;
 }
 
-div.new_product_page {
-    -webkit-animation: myfirst 4s; 
-    animation: myfirst 4s;
-}
-
-
- @-webkit-keyframes myfirst {
-    from {background: white;}
-    to {background: #E6FAEF;}
-}
-
-
-div.actions{
-	padding-top: 5px;
-}
 
 ul.footerbar li {
 	display: inline;
@@ -180,12 +182,13 @@ ul.footerbar li {
 footer {
    text-align: center;
    font-size: 12px;
-   position:fixed;
-   bottom:0px;
-   height:50px;
+   bottom:0;
+   height:7%;
    width:100%;
    background-color: #E6FAEF;
    box-shadow: 0px 0px 8px 0px grey;
+   position: fixed;
+
 
 }
 
@@ -197,6 +200,7 @@ div#picture {
 div#newstuff {
 	margin: 10px;
 }
+
 
 
 
